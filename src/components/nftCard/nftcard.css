@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.card {
+  width: 18rem;
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  border: 1px solid #d7d7d7;
+  border-radius: 15px;
+}
+.nft-image{
+    width: 100%;
+}
+.card section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.card section p {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.card .card-info3 {
+  justify-content: left;
+  gap: 1rem;
+}
+@media (max-width: 1000px) {
+    .card {
+        width: 45vw;
+        height: 30vh;
+        justify-content: space-between;
+    }
+    .card section p {
+        font-weight: 400;
+        font-size: 0.7rem;
+    }
+    .card section :nth-child(2){
+     text-align: right;
+      }
+    .card .card-info3{
+        gap: 0.5rem;
+    }
+}
