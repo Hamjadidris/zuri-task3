@@ -5,18 +5,9 @@ import metamask2 from "../../assest/metamask2.svg";
 import go from "../../assest/go.svg";
 import { Link } from "react-router-dom";
 import "./Modal.css";
-import { useState } from "react";
 
-const Modal = () => {
+const Modal = ( {handleModal, showModal} ) => {
 
-    const [showModal, setShowModal] = useState(false);
-
-    function handleModal (){
-        if(showModal){
-          return setShowModal(false)
-        }
-        setShowModal(true)
-      }
   return (
     <div className={ (showModal)?('modal'):('modalhide')}>
       <div className="options">

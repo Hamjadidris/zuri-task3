@@ -9,18 +9,11 @@ import Card from "../components/nftCard/Card";
 import main3img from '../assest/main3img.svg'
 import Modal from "../components/modal/Modal";
 
-const Page1 = () => {
-    const [showModal, setShowModal] = useState(false);
-    function handleModal (){
-        if(showModal){
-          return setShowModal(false)
-        }
-        setShowModal(true)
-      }
+const Page1 = ({handleModal, showModal}) => {
 
   return (
     <div className="page1">
-        <Modal />
+        <Modal handleModal = {handleModal} showModal={showModal}/>
       <main className="main1">
         <section className="main1-section1">
           <div>

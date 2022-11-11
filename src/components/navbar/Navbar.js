@@ -3,7 +3,7 @@ import "./navbar.css";
 import navLogo from "../../assest/navlogo.svg";
 import Modal from "../modal/Modal";
 
-const Navbar = ({handleModal}) => {
+const Navbar = ({handleModal, showModal}) => {
 
 
   return (

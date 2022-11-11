@@ -20,9 +20,9 @@ function App() {
       
   return (
     <div className="App">
-      <Navbar handleModal = {handleModal}/>
+      <Navbar handleModal = {handleModal} showModal = {showModal}/>
       <Routes>
-        <Route path="/" element={<Page1 />}></Route>
+        <Route path="/" element={<Page1 handleModal = {handleModal} showModal = {showModal}/>}></Route>
         <Route path="/wallet" element={<Page2 />}></Route>
       </Routes>
       <Footer />
