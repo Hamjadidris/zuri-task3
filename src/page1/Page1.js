@@ -1,19 +1,19 @@
 import React from "react";
 import "./page1.css";
-import { useState } from "react";
 import landingpageImg from "../assest/landingimg.svg";
 import mbtoken from "../assest/mbtoken.svg";
 import metamask from "../assest/metamask.svg";
 import opensea from "../assest/opensea.svg";
-import Card from "../components/nftCard/Card";
-import main3img from '../assest/main3img.svg'
+import CardInterface from "../components/nftCard/CardInterface";
+import Nft from "../NFTs";
+import main3img from "../assest/main3img.svg";
 import Modal from "../components/modal/Modal";
 
-const Page1 = ({handleModal, showModal}) => {
-
+const Page1 = ({ handleModal, showModal }) => {
+  const displayImages = Nft.slice(0, 8);
   return (
     <div className="page1">
-        <Modal handleModal = {handleModal} showModal={showModal}/>
+      <Modal handleModal={handleModal} showModal={showModal} />
       <main className="main1">
         <section className="main1-section1">
           <div>
@@ -48,24 +48,19 @@ const Page1 = ({handleModal, showModal}) => {
       <main className="main2">
         <h1>Inspiration for your next adventure</h1>
         <main>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {displayImages.map((img) => (
+            <CardInterface src={img} />
+          ))}
         </main>
       </main>
       <main className="main3">
         <section className="main3-section1">
-            <h1>Metabnb NFTs</h1>
-            <p>
-              Discover our NFT gift cards collection. Loyal customers gets
-              amazing gift cards which are traded as NFTs. These NFTs gives our
-              cutomer access to loads of our exclusive services.
-            </p>
+          <h1>Metabnb NFTs</h1>
+          <p>
+            Discover our NFT gift cards collection. Loyal customers gets amazing
+            gift cards which are traded as NFTs. These NFTs gives our cutomer
+            access to loads of our exclusive services.
+          </p>
           <div className="learnmore-container">
             <button className="learn-more">Learn More</button>
           </div>

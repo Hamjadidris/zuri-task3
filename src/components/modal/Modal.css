@@ -1,4 +1,4 @@
-.modal{
+.modal {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -38,20 +38,20 @@
   height: 3.5rem;
   text-decoration: none;
 }
-.options-links-container p{
-    text-decoration: none;
+.options-links-container p {
+  text-decoration: none;
 }
 .options div .options-links {
   justify-content: left;
   gap: 1rem;
 }
 
-.modalhide{
-    display: none;
+.modalhide {
+  display: none;
 }
 
 @media (max-width: 1000px) {
-    .options{
-        width: 100%;
-    }
+  .options {
+    width: 100%;
+  }
 }

@@ -6,10 +6,9 @@ import go from "../../assest/go.svg";
 import { Link } from "react-router-dom";
 import "./Modal.css";
 
-const Modal = ( {handleModal, showModal} ) => {
-
+const Modal = ({ handleModal, showModal }) => {
   return (
-    <div className={ (showModal)?('modal'):('modalhide')}>
+    <div className={showModal ? "modal" : "modalhide"}>
       <div className="options">
         <div className="option-heading">
           <h3>Connect Wallet</h3>
