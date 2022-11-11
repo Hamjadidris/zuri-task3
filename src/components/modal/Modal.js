@@ -18,7 +18,7 @@ const Modal = () => {
         setShowModal(true)
       }
   return (
-    <div className={ (showModal)?('modal show'):('modal hide')}>
+    <div className={ (showModal)?('modal'):('modalhide')}>
       <div className="options">
         <div className="option-heading">
           <h3>Connect Wallet</h3>

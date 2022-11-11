@@ -1,9 +1,13 @@
 import React from "react";
 import "./navbar.css";
 import navLogo from "../../assest/navlogo.svg";
+import Modal from "../modal/Modal";
 
 const Navbar = ({handleModal}) => {
+
+
   return (
+
     <nav className="navbar"> 
       <section className="nav-section">
         <img alt="logo" src={navLogo} />
