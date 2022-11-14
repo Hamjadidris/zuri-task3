@@ -10,15 +10,30 @@
     align-items: center;
     justify-content: space-between;
     padding:2vh 6vh;
+    transition: all .3s ease-in;
+}
+.navbar.scrolled{
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.31);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(9.1px);
 }
 
 .nav-links{
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     list-style: none;
     font-weight: 400;
     font-size: 1.2rem;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:#000 ;
+    white-space: nowrap;
 }
 .nav-button{
     width:10rem;
@@ -32,12 +47,18 @@
 }
 @media (max-width: 1000px) {
     .navbar{
+        height: 25vh;
         padding: 1vh 3vh;
-        flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: center;
+        gap: 0.5rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
     }
     .nav-links{
-       display: none;
+       width:100%;
+       max-width: 40rem;
+       gap: 1px;
+       padding: 0;
+       font-size: 1.1rem;
     }
 }

@@ -8,22 +8,22 @@ import "./Modal.css";
 
 const Modal = ({ handleModal, showModal }) => {
   return (
-    <div className={showModal ? "modal" : "modalhide"}>
+    <div className={showModal ? "modal" : "modalhide"} onClick={handleModal}>
       <div className="options">
         <div className="option-heading">
           <h3>Connect Wallet</h3>
           <img alt="cancel" src={cancel} onClick={handleModal} />
         </div>
         <p>Choose your preferred wallet:</p>
-        <Link to="/wallet">
-          <div className="options-links-container">
+        <div className="options-links-container">
+          <Link to="/wallet" className="link">
             <div className="options-links">
               <img alt="metamask" src={metamask2} />
               <p>Metamask</p>
             </div>
             <img alt="next" src={go} />
-          </div>
-        </Link>
+          </Link>
+        </div>
         <div className="options-links-container">
           <div className="options-links">
             <img alt="wallet connect" src={wallet} />

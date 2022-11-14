@@ -1,36 +1,56 @@
 .modal {
-  position: absolute;
+  position: fixed;
+  top:0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.102);
+  background-color: rgba(0, 0, 0, 0.208);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
 }
 .options {
-  width: 30vw;
-  height: 30vh;
+  width: 35vw;
+  height: 35vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   background: #ffffff;
   border-radius: 16px;
+  padding-bottom: 1.5rem;
 }
 .options p {
   padding: 1vh;
+  width: 100%;
+  text-align: left;
+}
+.options a{
   text-decoration: none;
 }
-.option-heading {
+.options .option-heading {
   border-bottom: 1px solid gray;
-  height: 20%;
-}
-.options div {
+  height: 25%;
   width: 100%;
+}
+
+.options div {
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1vh;
+}
+.options .link{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    
 }
 .options-links-container {
   border: 1px solid #cfd8dc;

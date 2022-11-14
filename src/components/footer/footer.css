@@ -54,10 +54,18 @@
         height: fit-content;
     }
     .footer-section1{
-        height: 15vh;
+        height: 20vh;
+        gap: 1vh;
     }
     .footer-section2{
-        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row;
         gap: 5vw;
+    }
+}
+@media (max-width:700px){
+    .footer-section2{
+        flex-direction:column;
     }
 }
